@@ -7,8 +7,8 @@
 
 
 Name:           puppet-datacat
-Version:        XXX
-Release:        XXX
+Version:        0.6.2
+Release:        1%{?alphatag}%{?dist}
 Summary:        Puppet type for handling data fragments
 License:        Apache-2.0
 
@@ -48,4 +48,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/datacat/
 
 
 %changelog
+* Wed Sep 21 2016 Haikel Guemar <hguemar@fedoraproject.org> - 0.6.2-1.10f6dde.git
+- Newton update 0.6.2 (10f6dde9a3c3c47c06a6322d22d7723685d9976a)
+
 
