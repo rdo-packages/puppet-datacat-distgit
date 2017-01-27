@@ -10,7 +10,7 @@ Name:           puppet-datacat
 Version:        XXX
 Release:        XXX
 Summary:        Puppet type for handling data fragments
-License:        Apache-2.0
+License:        ASL 2.0
 
 URL:            https://github.com/richardc/puppet-datacat
 
