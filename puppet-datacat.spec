@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppet-datacat
-%global commit 10f6dde9a3c3c47c06a6322d22d7723685d9976a
+%global commit 5cce8f2389c94c0a96d38c85ebe222a0e400e087
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-datacat
-Version:        XXX
-Release:        XXX
+Version:        0.6.2
+Release:        3%{?alphatag}%{?dist}
 Summary:        Puppet type for handling data fragments
 License:        ASL 2.0
 
@@ -48,5 +48,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/datacat/
 
 
 %changelog
+* Thu Aug 24 2017 Alfredo Moralejo <amoralej@redhat.com> 0.6.2-3.5cce8f2git
+- Pike update 0.6.2 (5cce8f2389c94c0a96d38c85ebe222a0e400e087)
 
 
